@@ -34,8 +34,9 @@ func resourceAwsApiGatewayClientCertificate() *schema.Resource {
 				Computed: true,
 			},
 			"pem_encoded_certificate": {
-				Type:     schema.TypeString,
-				Computed: true,
+				Type:      schema.TypeString,
+				Computed:  true,
+				Sensitive: true,
 			},
 		},
 	}
